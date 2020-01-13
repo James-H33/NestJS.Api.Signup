@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { SignupController } from './signup/Signup.controller';
+import { UserController } from './user/User.controller';
 import { ServicesModule } from 'src/services/Services.module';
 
 @Module({
@@ -7,7 +7,7 @@ import { ServicesModule } from 'src/services/Services.module';
         ServicesModule
     ],
     providers: [
-        SignupController
+        UserController
     ]
 })
 export class ControllersModule {}

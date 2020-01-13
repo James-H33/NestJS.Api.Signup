@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { SignupController } from './controllers/signup/Signup.controller';
+import { UserController } from './controllers/user/User.controller';
 import { ControllersModule } from './controllers/Controllers.module';
 import { ServicesModule } from './services/Services.module';
 
@@ -12,7 +12,7 @@ import { ServicesModule } from './services/Services.module';
   ],
   controllers: [
     AppController, 
-    SignupController
+    UserController
   ],
   providers: [
     AppService
